@@ -1,0 +1,26 @@
+<!doctype html><html><head><meta charset="utf-8"><title>mdclip fixture</title></head><body>
+<h1>Heading one</h1>
+<p>A paragraph with <strong>bold</strong>, <em>italic</em>, <code>inline_code</code> and a <a href="https://example.org/ok">safe link</a>.</p>
+<h2>Lists</h2>
+<ul><li>first</li><li>second<ul><li>nested a</li><li>nested b</li></ul></li><li>third</li></ul>
+<ol start="3"><li>three</li><li>four</li></ol>
+<h2>Code</h2>
+<pre><code class="language-python">def hello():
+    return "world`s"
+</code></pre>
+<h2>Table</h2>
+<table><tr><th>Name</th><th>Role</th></tr><tr><td>alpha</td><td>one</td></tr><tr><td>beta</td><td>two</td></tr></table>
+<blockquote><p>Quoted line.</p><p>Second quoted line.</p></blockquote>
+<h2>Suspicious links</h2>
+<p><a href="http://insecure.example.com/page">plain http link</a></p>
+<p><a href="https://192.0.2.44/login">raw ip login</a></p>
+<p><a href="https://xn--pple-43d.com/signin">apple.com</a></p>
+<p><a href="https://bit.ly/3xAbCd">shortened</a></p>
+<p><a href="https://evil-cdn.test/get">paypal.com</a></p>
+<p><a href="https://files.example.net/setup.exe">download installer</a></p>
+<div style="display:none"><p>HIDDEN MENU SHOULD NOT APPEAR</p></div>
+<div aria-hidden="true"><p>ARIA HIDDEN SHOULD NOT APPEAR</p></div>
+<img src="/img/logo.png" alt="Logo">
+<hr>
+<p>Tail paragraph.</p>
+</body></html>
